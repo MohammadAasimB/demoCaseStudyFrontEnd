@@ -1,0 +1,32 @@
+<div class="card-body" >
+    <form id="id-form" name="id" (ngSubmit)="f.form.valid && onSubmit()" action="" #f="ngForm">
+         <input name="input-id" [(ngModel)]="name" placeholder="Enter Name" type="text">
+         <button name="submit-button" type="submit" class=" btn search btn-primary"  [disabled]="f.form.invalid">Search</button>
+    </form>
+   
+</div>
+
+<div class="card1" *ngIf="value">
+    <div class="id">
+        <p>Id</p>
+        <span>{{data.id}}</span>
+    </div>
+    <div class="name">
+        <p>Name</p>
+        <span>{{data.name}}</span>
+    </div>
+    <div class="age">
+        <p>Age</p>
+        <span>{{data.age}}</span>
+    </div>
+    <div class="salery">
+        <p>Salery</p>
+        <span>{{data.salary}}</span>
+    </div>
+    <div class="department">
+        <p>Department</p>
+        <span>{{data.department}}</span>
+    </div>
+    
+
+</div>

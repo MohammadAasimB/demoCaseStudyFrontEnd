@@ -1,0 +1,63 @@
+<div class="container" *ngIf="!submittedData">
+    <h1>Add Data</h1>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" class="form-control">
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" formControlName="age" class="form-control">
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="salary">Salary</label>
+            <input type="text" formControlName="salary" class="form-control">
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="department">Department</label>
+            <input type="text" formControlName="department" class="form-control">
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="submit" [disabled]="myForm.invalid">Submit</button>
+    </form>
+
+    <div *ngIf="myForm.invalid && myForm.dirty && myForm.touched">
+        Form is invalid
+    </div>
+    
+</div>
+<div *ngIf="submittedData">
+    <div >
+        <h1>Your form is Submitted</h1>
+        <h2>Submitted Data</h2>
+        <p><strong>Name:</strong> {{ submittedData.name }}</p>
+        <p><strong>Age:</strong> {{ submittedData.age }}</p>
+        <p><strong>Salary:</strong> {{ submittedData.salary }}</p>
+        <p><strong>Department:</strong> {{ submittedData.department }}</p>
+      </div>
+</div>
+
+<!-- <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nostrum quo, distinctio aspernatur ipsum ut placeat magnam earum, ipsa culpa fuga laborum, blanditiis quae aperiam vitae labore quos deleniti consectetur.lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem natus veniam nobis quisquam minus, facere illo illum provident consectetur recusandae sapiente iusto dolorum nostrum deserunt ipsam corporis eos sit unde.</p>
+</div> -->

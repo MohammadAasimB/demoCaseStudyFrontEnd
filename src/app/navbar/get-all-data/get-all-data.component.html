@@ -1,0 +1,82 @@
+<form
+  class="mt-3 mb-5 text-center"
+  action=""
+  name="form"
+  *ngIf="!result"
+  (ngSubmit)="f.form.valid && onSubmit()"
+  #f="ngForm"
+>
+  <button type="submit" name="get-button" novalidate>View all Data</button>
+</form>
+
+<div class="card1" *ngFor="let data of result">
+  <div class="sub-card">
+    <div class="id">
+      <p>Id</p>
+      <span>{{ data.id }}</span>
+    </div>
+    <div class="name">
+      <p>Name</p>
+      <span>{{ data.name }}</span>
+    </div>
+    <div class="age">
+      <p>Age</p>
+      <span>{{ data.age }}</span>
+    </div>
+    <div class="salery">
+      <p>Salery</p>
+      <span>{{ data.salary }}</span>
+    </div>
+    <div class="department">
+      <p>Department</p>
+      <span>{{ data.department }}</span>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card1">
+  <div class="sub-card">
+    <div class="id">
+      <p>Id</p>
+      <span>11</span>
+    </div>
+    <div class="name">
+      <p>Name</p>
+      <span>mubbu</span>
+    </div>
+    <div class="age">
+      <p>Age</p>
+      <span>25</span>
+    </div>
+    <div class="salery">
+      <p>Salery</p>
+      <span>30000</span>
+    </div>
+    <div class="department">
+      <p>Department</p>
+      <span>developer</span>
+    </div>
+  </div>
+  <div class="sub-card">
+    <div class="id">
+      <p>Id</p>
+      <span>11</span>
+    </div>
+    <div class="name">
+      <p>Name</p>
+      <span>mubbu</span>
+    </div>
+    <div class="age">
+      <p>Age</p>
+      <span>25</span>
+    </div>
+    <div class="salery">
+      <p>Salery</p>
+      <span>30000</span>
+    </div>
+    <div class="department">
+      <p>Department</p>
+      <span>developer</span>
+    </div>
+  </div> 
+</div>-->

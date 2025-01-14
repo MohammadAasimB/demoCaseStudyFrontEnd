@@ -1,0 +1,51 @@
+.card-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.card-body input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.card1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.card1 div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.card1 p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.card1 span {
+    font-size: 14px;
+    color: #555;
+}
+
+.card1 .id, .card1 .name, .card1 .age, .card1 .salery, .card1 .department {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.card1 .department {
+    border-bottom: none;
+}

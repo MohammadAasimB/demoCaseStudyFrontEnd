@@ -1,0 +1,64 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for Card Container */
+  .card1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    max-width: 400px;
+  }
+  
+  /* Hover effect for card */
+  .card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for each data field */
+  .card1 p {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .card1 span {
+    display: block;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Specific field styling */
+  .name span, .age span, .salery span, .department span {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* ID field styling */
+  .id span {
+    font-weight: bold;
+    color: #0066cc;
+  }
+  
+  /* Layout for Card Content */
+  .card1 .id, .card1 .name, .card1 .age, .card1 .salery, .card1 .department {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .card1 {
+      max-width: 100%;
+      padding: 15px;
+    }
+  }
+  

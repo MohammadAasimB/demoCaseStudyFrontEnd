@@ -1,0 +1,25 @@
+
+<div class="card card-body d-flex w-100 justify-content-between justify-content-center flex-row" *ngFor="let data of result">
+    <div class="id">
+        <p>Id</p>
+        <span>{{data.id}}</span>
+    </div>
+    <div class="name">
+        <p>Name</p>
+        <span >{{data.name}}</span>
+    </div>
+    <div class="age">
+        <p>Age</p>
+        <span>{{data.age}}</span>
+    </div>
+    <div class="salery">
+        <p>Salery</p>
+        <span>{{data.salary}}</span>
+    </div>
+    <div class="department">
+        <p>Department</p>
+        <span>{{data.department}}</span>
+    </div>
+    <button  class="btn btn-primary" (click)="edit(data.id)">Edit</button>
+
+</div>

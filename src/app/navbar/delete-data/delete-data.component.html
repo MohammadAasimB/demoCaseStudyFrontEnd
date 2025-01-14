@@ -1,0 +1,7 @@
+<div class="card-body" >
+    <form id="id-form" name="id" (ngSubmit)="f.form.valid && onSubmit()" action="" #f="ngForm">
+         <input name="input-id" [(ngModel)]="id" placeholder="Enter ID" type="text">
+         <button name="submit-button" type="submit" class=" btn search btn-primary"  [disabled]="f.form.invalid">Search</button>
+    </form>
+   
+</div>

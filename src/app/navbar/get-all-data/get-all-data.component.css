@@ -1,0 +1,53 @@
+/* Basic styling for the card */
+.card1 {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px;
+  max-width: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 20px;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for individual fields inside the card */
+.card1 .id,
+.card1 .name,
+.card1 .age,
+.card1 .salery,
+.card1 .department {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #343a40;
+}
+
+/* Labels styling */
+.card1 p {
+  font-weight: bold;
+  margin: 0;
+  color: #495057;
+}
+
+/* Values styling */
+.card1 span {
+  color: #6c757d;
+}
+
+/* Additional styling to make cards look consistent */
+.card1 .name span,
+.card1 .age span,
+.card1 .salery span,
+.card1 .department span {
+  font-weight: 500;
+}
